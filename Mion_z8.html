@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<ol>
+<h1><li>Gdzie jest wstawiany</h1>
+<p>Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami < head> a 
+< /head>)
+<h1><li>Składnia toretyczna:</h1>
+<div style="border: 1px solid black;">
+< head><br>
+(...)<br>
+ < style type="text/css"><br>
+ / * < ![ CDATA[ */ <br>
+ selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+ selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+ (...)<br>
+ / * ] ] > * /<br>
+ < / style><br>
+(...)<br>
+< /head>
+</div>
+
+<h1><li>jakie mogą być selektory</h1>
+<b>Selektorem</b> może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka 
+tabeli) i inne. To właśnie elementom, które znajdują się w kodzie źródłowym, pomiędzy tymi 
+znacznikami, nadajemy atrybuty formatowania opisane w arkuszu.
+
+<h1><li>jakie mogą być cechy i wartości.</h1>
+Jako <b>"cecha"</b> (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty 
+formatowania nam chodzi (opisane w kolejnych rozdziałach).<BR>
+Natomiast jako wyraz <b>"wartość"</b> wpisujemy dokładną wartość atrybutu.
+Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy 
+rozdzielone średnikami.
+</ol>
+</body>
+</html>

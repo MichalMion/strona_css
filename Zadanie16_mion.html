@@ -1,0 +1,98 @@
+<html>
+<head>
+</head>
+<body>
+<ol>
+<h1><li>Opis znacznika DIV</h1>
+<h3>Jaki to Element:</h3>
+<p>Element blokowy (DIV) jest elementem blokowym może zawierać wewnątrz siebie
+zwykły tekst, jak również inne elementy blokowe. Został on pomyślany do tworzenia
+obszerniejszych struktur. <p>
+<h3>Składnia:</h3>
+<div style="border: 1px solid black;">
+< div style="cecha: wartość; cecha2: wartość2...">...< /div>
+</div>
+<h3>Zastosowanie</h3>
+<ol>
+<li>Z div'a powinno się korzystać kiedy potrzebujemy wyodrębnić poszczególne bloki w
+układzie dokumentu, na przykład lewa kolumna, menu nawigacyjne, stopka.
+<li>Służy do utworzenia sekcji (bloku) w pliku HTML w celu ich sformatowania za
+pomocą arkusza stylów CSS.
+<li>DIV odgrywa istotną rolę w grupowaniu wielu różnych elementów i pozycjonowaniu
+fragmentów dokumentu.
+</ol> 
+<h3>Atrybuty</h3>
+<ol>
+<li>Align="ustawienie"<br>
+ Poziome ustawienie (wyrównanie) z uwzględnieniem otoczenia (zdeprecjonowane):
+	<ul>
+	<li>center - wyśrodkowanie
+	<li>justify - wyrównanie do obu marginesów jednocześnie
+	<li>left - wyrównanie do lewej
+	<li>right - wyrównanie do prawej
+	</ul>
+<li>CLASS="klasa"
+<li>DIR="kierunek"
+<li>ID="nazwa"
+<li>LANG="język"
+<li>STYLE="styl"
+<li>TITLE="tekst"
+</ol>
+<h1><li>Opis znacznika SPAN</h1>
+
+<h3>Jaki to element:</h3>
+Elementy wyświetlanie w linii (SPAN) jest elementem liniowym nie mogą zawierać
+elementów blokowych, ale mogą inne elementy wyświetlane w linii oraz zwykły tekst. 
+<h3>Składnia:</h3>
+<div style="border: 1px solid black">
+< span style="cecha1: wartość1; cecha2: wartość2...">...< /span>
+
+</div>
+<h3>Zastosowanie:</h3>
+<ul type="square">
+<li>Jeśli chcemy w paragrafie część tekstu wyróżnić czerwonym kolorem, do
+wyodrębnienia tego tekstu nie możemy użyć elementu div (paragraf < p> z zasady
+nie może zawierać elementów blokowych) tylko span.
+<li>Wewnątrz DIV można oczywiście wpisać również SPAN
+</ul>
+<h3>Opis Teoretyczny</h3>
+Znacznik < span>...< /span> pozwala na objęcie pewnego większego fragmentu dokumentu.
+Pojedynczym znacznikiem < span>...< /span> możemy objąć kilka różnych elementów, które
+są wyświetlane w linii (sam element SPAN tak właśnie jest wyświetlany), np. wytłuszczenie
+tekstu oraz kursywę. Element ten tak dobrze nadaje się do osadzania stylów, ponieważ sam w
+sobie nie ma określonego żadnego formatowania, które mogłoby kolidować z efektem, jaki
+chcemy uzyskać.
+<h1><li>Różnica między znacznikami DIV i SPAN</h1>
+Obydwa elementy służą jedynie do wyodrębniania części struktury dokumentu, aby docelowo
+na przykład poprzez arkusze styli osiągnąć zamierzony wygląd strony.<br><br>
+Span'em wyodrębniamy elementy liniowe (najczęściej fragmenty tekstu) a divem blokowe
+(blokowe elementy, większe fragmenty struktury składające się na układ strony)
+Dodatkowo DIV domyślnie jest wyświetlany w bloku. Natomiast SPAN w linii
+<h1><li>Opisz oraz wymień elementy/tagi: 1)liniowe 2)blokowe 3)blokowo-liniowe.</h1>
+	<OL>
+	<LI><b><u>liniowe</b></u> – < span>, < em>, < strong>
+		<ul>
+		<li><b><u>Elementy liniowe</b></u> nie spowodują przejścia do nowej linii, będą wyświetlać się obok siebie, w
+		jednej linii. Domyślnie, elementom liniowym przeglądarka ustawia właściwość "display" na
+		"inline"
+		</ul>
+	<li><b><u>blokowe</b></u> – < div>, < p>, < article>
+		<ul>
+		<li><b><u>Elementy blokowe</b></u> z kolei będą zachowywać się jak pudełka, które ustawiasz jeden pod
+		drugim, a więc nigdy nie wyświetlą się obok siebie. Domyślnie, elementom blokowym
+		przeglądarka ustawia właściwość "display" na "block",
+		</ul>
+	<li><b><u>liniowo-blokowe</b></u> – < input>, < textarea>
+		<ul>
+		<li><b><u>Elementy liniowo-blokowe</b></u> z kolei będą zachowywać się jak liniowe, jeśli chodzi o
+			położenie (a więc wyświetlać będą się obok siebie), natomiast różnią się od nich tym, że
+			możesz nadać im różne wielkości. Ma to sens, np. < textarea> wyświetla się jako duży
+			prostokąt i zdecydowanie "wychodzi" poza pojedynczą linijkę tekstu. Domyślnie, elementom
+			liniowo blokowym przeglądarka ustawia właściwość "display" na "inline-block".
+		</ul>
+	</ol>
+
+
+</body>
+</html>
+<!--Michał Mionskowski-->

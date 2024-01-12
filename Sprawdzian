@@ -1,0 +1,54 @@
+1. https://domena
+https - protokół HTTP (secured)
+domena - jakaś domena np lajtpvp.eu
+
+2. <title>SPRAWDZIAN</title>
+
+3. <hr />
+
+4. <input name="nazwa" value="domyslna wartosc" placeholder="taki podswietlone cos" />
+
+5. colspan i rowspan
+colspan="3"
+rowspan="3"
+
+6. 
+ul - punktowana
+ol - z cyframi
+
+to tam wstawiacie ul, pozniej w srodku li i znowu ul/li
+
+7. h1, h2, h3, h4, h5, h6
+
+8. <meta charset="UTF-8" />
+
+9. <img src='sciezka pliku ze zdjeciem albo link do strony ze zdjeciem' width="32" height="32" border="1" alt="alternatywny tekst xd" />
+border i alt nie sa wymagane
+
+10. 
+html 1.0,
+html 2.0,
+html 3.0 i jego wersje (3.1 i 3.2),
+html 4.0 i jego wersje (glownie 4.01),
+xhtml,
+html5 i jego wersje (5.1, 5.2, 5.3 i najnowsza 5.4)
+
+11. sprawdzanie poprawnosci napisanej strony w htmlu
+
+12. &nbsp;
+
+13. <strong> albo <b>, <u>
+
+14. <i>, <sup>, <sub>
+
+15. <h1> i <h6>
+
+16. <meta name="keywords" content="lajtpvp.eu, komar ddoser" />
+
+17. <input type="password" <!--reszta parametrow--> />
+
+18. niezamkniete znaczniki, mozliwosc przeniesnienia do css, brak jakis plikow, brak jakis tagow, zla struktura, jakies zle argumenty, skladnia itd.
+
+19. <a href="https://lajtpvp.eu"></a>
+
+20. meta, doctype, link, img, hr, br,

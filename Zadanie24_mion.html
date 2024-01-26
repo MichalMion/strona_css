@@ -1,0 +1,131 @@
+<html>
+<head>
+</head>
+<body>
+<ol type="1">
+<h1><li>Jakie standardowo dostępne są czcionki w systemie Windows</h1>
+		<ul type="square">
+		<li>Times New Roman (Szeryfowa)
+		<li>Arial (bezszeryfowa)
+		<li>Courier New (monotypiczna)
+		</ul>
+<h1><li>Jakich czcionek dodatkowo dostarcza Internet Explorerem</h1>
+		<ul type="circle">
+		<li>verdana
+		<li>Tahoma
+		<li>'Trebuchet MS'
+		<li>georgia
+		</ul>
+<h1><li>Wymień rodziny ogólne</h1>
+		
+		<ul type="disc">Oprócz podania rodzaju czcionki wprost, możliwe jest także wpisanie rodziny ogólnej:
+		<li>serif - <u>czcionka szeryfowa</u> (końcówki znaków posiadają "ozdobniki"), np.: 'Times New Roman', Georgia, Garamond, Bodoni 
+		<li>sans-serif - <u>czcionka bezszeryfowa</u> (końcówki znaków są proste), np.: Arial, Verdana, 'Trebuchet MS', Helvetica, Univers, Futura 
+		<li>monospace - <u>czcionka o stałej szerokości znaków</u> - monotypiczna (wygląda, jak pisana na maszynie), np.: Courier, 'Courier New' 
+		<li>cursive - <u>czcionka mająca pewne cechy pochyłej</u> (wygląda, jak pisana ręcznie) 
+		<li>fantasy - <u>czcionka fantazyjna</u> (dekoracyjna)
+		</ul>
+<h1><li>Kiedy stosujemy rodziny czcionek, w jaki sposób wpisujemy</h1>
+		Rodziny ogólne wykorzystuje się jako ostatnia alternatywa - jeśli użytkownik nie będzie posiadał żadnej czcionki, której nazwę wpisaliśmy wprost. Dlatego zwykle rodzinę ogólną podaje się na samym końcu listy nazw czcionek, np.:
+		<div frame="1">
+		body { font-family: Arial, Helvetica, Verdana, sans-serif }
+		</div>
+		
+<h1><li>Rodzaje wyrównanie tekstu</h1>
+		<ol>
+		<li>Do prawej 
+		<li>Do lewej 
+		<li>Wyśrodkowane 
+		<li>Wyjustowane 
+		</ol>
+<h1><li>Kolor tekstu</h1>
+Składnia reguły:
+<div style="border: 1px ;">
+selektor {color: kolor;}
+</div>
+Wyraz selektor ma zastosowanie do wszystkich elementów.
+Natomiast jako kolor należy podać definicję koloru.
+Dzięki temu poleceniu można ustalić dowolny kolor tekstu.
+	<ul><u>Przykład:</u>
+	<li>kolor #c0c0c0; (silver)
+	<li>kolor #800000; (maroon)
+	<li>kolor #ff0000; (red)
+	<li>kolor #800080; (purple)
+	<li>kolor #008000; (green)
+	<li>kolor #ffff00; (yellow)
+	<li>kolor #000080; (navy)
+	</ul>
+	Kolor można formatować w CSS w różny sposób:
+	<ul>
+	<li>Selektor {color: nazwa koloru HTML }
+	<li>Selektor {color: #6 znaków kodu hexa RGB }
+	</ul>
+<h1><li>dekoracja tekstu</h1>
+Dekoracja tekstu
+Tekst można „udekorować” w sposób następujący:
+<ol type="a">
+<li>Podkreślić - (underline)
+<li>Przekreślić - (line-through)
+<li>Nadkreślić - (overline)
+<li>Można dodać migotanie tekstu (tylko Netspace/Mozilla/Opera) – (blink)
+</ol>
+Składnia reguły:<br>
+&nbsp; &nbsp; selektor {text-decoration: dekoracja;}
+Wyraz selektor ma zastosowanie do wszystkich elementów.<br>
+<u>dekoracja:</u><br>
+<ul>
+<li>"none" - bez zmian czyli tekst bez podkreśleń, przekreśleń itp.
+<li>"underline" - podkreślenie
+<li>"line-through" - przekreślenie
+<li>"overline" - nadkreślenie
+<li>"blink" - migotanie tekstu (tylko Netscape/Mozilla/Opera)
+</ul>
+Styl czcionki
+<ul>
+<li>normal - czcionka normalna (podstawowa) 
+<li>italic - czcionka pochylona (jeżeli niedostępna, automatycznie wybierany jest styl oblique) 
+<li>oblique - również czcionka pochylona (podobna jak poprzednio)
+</ul>
+<H1><li>Warianty Czcionek</h1>
+<UL>
+<LI>normal - czcionka normalna (podstawowa) 
+<li>small-caps - kapitaliki
+</ul><br>
+"kapitaliki", czyli tekst napisany wielkimi literami, lecz czcionką o wielkości małych liter.
+<h1><li>Grubość czcionki</h1>
+<ul>
+<li>normal - czcionka normalna (podstawowa) 
+<li>bold - czcionka pogrubiona 
+<li>100, 200, 300, 400 (odpowiednik "normal"), 500, 600, 700 (odpowiednik "bold"), 800, 900 - każdy następny numer wskazuje wagę czcionki przynajmniej tak samo wytłuszczonej jak dla poprzedniej wartości w sekwencji<br><br>
+Niektóre rodziny czcionek mogą nie posiadać wszystkich dziewięciu stopni wytłuszczenia. Wiele posiada tylko wartości "normal" i "bold".
+</ul>
+<h1><li>Rozmiar czcionki</h1>
+<table border="1">
+<tr>
+<th>
+<ul align="left">
+<li>xx-small - najmniejsza
+<li>x-small - mniejsza
+<li>small - mała 
+<li>medium - średnia 
+<li>large - duża 
+<li>x-large - większa 
+<li>xx-large - największa
+</ul>
+
+<th>
+Z użyciem różnych jednostek
+<uL>
+<li>rozmiar 0.5cm 
+<li>rozmiar 4mm 
+<li>rozmiar 0.25in 
+<li>rozmiar 10pt 
+<li>rozmiar 1pc 
+<li>rozmiar 15px 
+<li>rozmiar 1em 
+<li>rozmiar 2ex
+<ul>
+</tr>
+</table>
+</body>
+</html>

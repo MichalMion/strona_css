@@ -1,0 +1,27 @@
+
+
+div.imie {
+	text-align: right;
+	color:blue ;
+
+	
+	h1{
+		color: red;
+	}
+	
+}
+div#akapit1_mionskowski	{
+
+/*sposób wyrównywania tekstu dla całego akapitu
+rodzina czcionki 1 (patrz tabela „Sposób kodowania rodziny czcionek”) */
+color: #98FB70 ;
+margin: 28mm ;
+/*odstępy między: wierszami 
+odstępy między: wyrazami 
+odstępy między: literami */
+}
+z1_kowalski /* zdanie pierwsze*/
+{
+FONT-VARIANT: ……………….;
+…………………………….
+}

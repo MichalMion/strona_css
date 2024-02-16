@@ -12,10 +12,17 @@ div.imie {
 }
 div#akapit1_mionskowski	{
 
-/*sposób wyrównywania tekstu dla całego akapitu
-rodzina czcionki 1 (patrz tabela „Sposób kodowania rodziny czcionek”) */
-color: #98FB70 ;
-margin: 28mm ;
+/*sposób wyrównywania tekstu dla całego akapitu*/
+text-indent: 2cm;
+text-decoration: overline;
+font-family: serif;
+color: #006400 ;
+line-height: 1cm;
+word-spacing: 12px;
+letter-spacing: 5ex;
+text-transform: capitalize;
+font-weight: 200 , 700 , 900;
+FONT-VARIANT: small-caps; 
 /*odstępy między: wierszami 
 odstępy między: wyrazami 
 odstępy między: literami */

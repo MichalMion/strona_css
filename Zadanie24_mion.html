@@ -27,7 +27,7 @@
 		</ul>
 <h1><li>Kiedy stosujemy rodziny czcionek, w jaki sposób wpisujemy</h1>
 		Rodziny ogólne wykorzystuje się jako ostatnia alternatywa - jeśli użytkownik nie będzie posiadał żadnej czcionki, której nazwę wpisaliśmy wprost. Dlatego zwykle rodzinę ogólną podaje się na samym końcu listy nazw czcionek, np.:
-		<div frame="1">
+		<div style="border: 2px solid black">
 		body { font-family: Arial, Helvetica, Verdana, sans-serif }
 		</div>
 		
@@ -40,7 +40,7 @@
 		</ol>
 <h1><li>Kolor tekstu</h1>
 Składnia reguły:
-<div style="border: 1px ;">
+<div style="border: 2px solid black;">
 selektor {color: kolor;}
 </div>
 Wyraz selektor ma zastosowanie do wszystkich elementów.
@@ -70,7 +70,8 @@ Tekst można „udekorować” w sposób następujący:
 <li>Można dodać migotanie tekstu (tylko Netspace/Mozilla/Opera) – (blink)
 </ol>
 Składnia reguły:<br>
-&nbsp; &nbsp; selektor {text-decoration: dekoracja;}
+&nbsp; &nbsp; 
+<div style="border: 1px solid black ;">selektor {text-decoration: dekoracja;}</div>
 Wyraz selektor ma zastosowanie do wszystkich elementów.<br>
 <u>dekoracja:</u><br>
 <ul>
@@ -127,5 +128,128 @@ Z użyciem różnych jednostek
 <ul>
 </tr>
 </table>
+
+<h1><li>Transformacja tekstu</h1>
+Składnia reguły:
+<div style="border: 2px solid black">
+ selektor {text-transform: transformacja;}
+ </div>
+Wyraz selektor ma zastosowanie do wszystkich elementów.
+<ul> transformacja:
+<li> "none" - bez zmian
+<li> "capitalize" - zamiana pierwszych liter wszystkich wyrazów na wielkie
+<li> "uppercase" - zamiana wszystkich liter na wielkie
+<li> "lowercase" - zamiana wszystkich liter na małe
+</ul>
+
+<h1><li>Wcięcie tekstu</h1>
+Składnia reguły:
+<div style="border: 2px solid black">
+ selektor {text-indent: wcięcie;}
+ </div>
+Wyraz selektor ma zastosowanie do elementów blokowych.
+ <ul>wcięcie:
+ <li>należy podać konkretną wielkość, używając jednostek miary:
+ <li>piksele - px
+ <li>punkty edytorskie - pt
+ <li>wysokość litery "x" - ex
+ <li>wysokość aktualnej czcionki - em
+ <li>centymetry lub milimetry - cm, mm
+ <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm
+ <li>cale - in (1in=2.54cm)
+ <li>procent wielkości nadrzędnej - %
+ </ul>
+ 
+ <h1><li>Odstęp między wierszami </h1>
+ 
+ Składnia reguły:
+ <div style="border: 2px solid black">
+ selektor {line-height: odstęp;}
+ </div>
+Wyraz selektor ma zastosowanie do wszystkich elementów.
+ <ul>odstęp:
+ <li>należy podać konkretną wielkość, używając jednostek miary:
+ <li>piksele - px
+ <li>punkty edytorskie - pt
+ <li>wysokość litery "x" - ex
+ <li>wysokość aktualnej czcionki - em
+ <li>centymetry lub milimetry - cm, mm
+ <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm
+ <li>cale - in (1in=2.54cm)
+ <li>procent wielkości nadrzędnej -%
+ <li>"normal" - przywraca wartość domyślną
+ </ul>
+ 
+ <h1><li>Odstęp między wyrazami</h1>
+ 
+ Składnia reguły:
+ <div style="border: 2px solid black;">
+ selektor {word-spacing: odstęp;}
+ </div>
+ 
+Wyraz selektor ma zastosowanie do wszystkich elementów.
+ <ul>odstęp: <br>należy podać konkretną wielkość, używając jednostek miary:
+ <li>piksele - px
+ <li>punkty edytorskie - pt
+ <li>wysokość litery "x" - ex
+ <li>wysokość aktualnej czcionki - em
+ <li>centymetry lub milimetry - cm, mm
+ <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm
+ <li>cale - in (1in=2.54cm)
+ <li>"normal" - przywraca wartość domyślną
+</ul>
+
+<h1><li>Odstęp między literami</h1>
+Składnia reguły:
+<div style="border: 2px solid black" >
+ selektor {letter-spacing: odstęp;}
+ </div>
+Wyraz selektor ma zastosowanie do wszystkich elementów.
+ <ul>odstęp:
+ <li>należy podać konkretną wielkość, używając jednostek miary:
+ <li>piksele - px
+ <li>punkty edytorskie - pt
+ <li>wysokość litery "x" - ex
+ <li>wysokość aktualnej czcionki - em
+ <li>centymetry lub milimetry - cm, mm
+ <li>części dziesiętne centymetra pisane z kropką np.: 0.5cm
+ <li>cale - in (1in=2.54cm)
+ <li>"normal" - przywraca wartość domyślną
+</ul>
+
+
+<h1><li>Łączenie własności czcionek i tekstu </h1>
+<ol type="1">Prawidłowa kolejność wartości atrybutów: 
+<li> font-style
+<li> font-variant
+<li> font-weight
+<li> font-size (po tym ukośnik „/”; bezpośrednio przed „line-height”)
+<li> line-height
+<li> font-family
+</ol>
+Składnia reguły:
+<div style="border: 2px solid black;">
+ selektor {font: wartości atrybutów;}
+ </div>
+Wyraz selektor ma zastosowanie do wszystkich elementów.<br>
+Jako wartości atrybutów wpisać należy zgodnie z podaną poniżej kolejnością, oddzielając 
+spacjami, konkretne wartości, które opisują poszczególne atrybuty czcionek i tekstu. <br>
+Można niektóre pominąć.<br>
+ <ul>wartości atrybutów:
+ <li>font-style
+ <li>font-variant
+ <li>font-weight
+ <li>font-size
+ <li>line-height
+ <li>font-family
+</ul>
+Dzięki temu poleceniu można w jednym miejscu zebrać atrybuty dotyczące czcionek i 
+tekstu. Pomiędzy font-size, a line-height należy wstawić ukośnik (bezpośrednio przed 
+line-height).<br>
+Przykład:<br>
+Po wpisaniu na przykład takiej reguły w arkuszu CSS:<br>
+<div style="border: 2px solid black;">
+ p {font: italic small-caps bold 14px /1cm Arial, Helvetica, Verdana, sans-serif;}
+</div>
 </body>
 </html>

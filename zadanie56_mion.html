@@ -46,7 +46,43 @@ poleceniem
 <div style="border: 2px solid black;">
 <&nbsp selektor class="klasa1 klasa2 klasa3..."> ... < /selektor >
 </div>
-
+Uwagi
+<ul>
+<li> przy czym klasy: klasa1, klasa2, klasa3 muszą być zdeklarowane w wewnętrznym,
+zewnętrznym lub importowanym arkuszu stylów.
+<li> Kolejność wpisywania nazw klas w wartości atrybutu class="..." nie ma znaczenia na
+ostateczny sposób formatowania elementu. Jeżeli kilka przypisanych klas odnosi się
+do tej samej własności, o wyniku decyduje zasada kaskadowości.
+</ul>
+<h1><li>Czym są podzbiory klas. Składnia teoretyczna listy klasy </h1>
+Istnieje możliwość określenia tzw. podzbioru klas, czyli podania, jakie klasy musi mieć
+jednocześnie przypisane element, aby wybrana reguła CSS miała do niego zastosowanie. Na
+przykład po wpisaniu:
+<div style="border: 1px Solid black;">
+selektor.klasa1.klasa3 { cecha: wartość }
+</div>
+zmieniony zostanie sposób formatowania elementu:
+<div style="border: 1px Solid black;">
+< selektor class="klasa1 klasa2 klasa3">...< /selektor>
+</div>
+Kolejność podawania klas - zarówno w regule CSS, jak i w wartości atrybutu class="..." - nie
+ma znaczenia
+<h1><li>Co jest sygnałem (przesłanką), że należy zastosować klasy?</h1>
+<ul><li>Jeśli jakiś element, o specyficznym rodzaju formatowania, wstępuje przynajmniej raz
+na niektórych stronach Twojego serwisu (może to być np. główny tytuł strony), jest to
+znak, że dobrze byłoby umieścić w zewnętrznym arkuszu stylów deklarację jego
+klasy. Dzięki temu, jeśli później zdecydujemy się zmienić jego formatowanie, nie
+będziemy musieli modyfikować każdej ze stron, a jedynie zewnętrzny arkusz.
+<li> Już na początkowym etapie projektowania serwisu, dobrze jest dokładnie obmyślić,
+jakie klasy mogą okazać się użyteczne. Im więcej deklaracji klas - odnoszących się do
+powtarzalnych elementów - umieścisz w zewnętrznym arkuszu stylów, tym szybciej
+przebiegnie późniejsza ewentualna modyfikacja stron!
+<li> Dobrym pomysłem jest również wstawianie komentarza przed każdą deklaracją klasy
+w arkuszu (znaki: /* ... */), w którym opisuje się jej przeznaczenie. Po jakimś czasie w
+Twoim arkuszu stylów może znaleźć się tyle klas, że zapomnisz, do jakich elementów
+się one odnosiły. Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej
+komentarz
+<h1><li>Kiedy i z jakiego powodu powinny być planowane klasy dla wykonywanej strony?</h1>
 </BODY>
 </html>
 <!-- Michał Mionskowski-->

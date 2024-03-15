@@ -1,0 +1,23 @@
+A
+{
+font-size: 18pt;
+text-decoration: none;
+}
+A:link
+{
+color: blue;
+}
+A:visited
+{
+color: green;
+}
+A:hover
+{
+color: red;
+text-decoration: underline;
+}
+/*"text-decoration" - dekoracja tekstu
+"none" - bez zmian czyli tekst bez podkreśleń, przekreśleń itp.
+"underline" - podkreślenie
+
+Michał Mionskowski */

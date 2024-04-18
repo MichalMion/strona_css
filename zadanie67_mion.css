@@ -1,0 +1,36 @@
+p:first-letter {
+    font-size: 119pt; 
+    color: blue; 
+}
+
+.akapit1 {
+    font-size: 21pt; 
+    color: gold; 
+}
+
+.akapit2 {
+    font-size: 24pt;
+    color: gold;
+}
+
+h1:first-letter {
+    font-size: 119pt;
+    color: silver;
+}
+
+h1 {
+    color: purple;
+}
+h2:first-line{
+    color:red;
+    font-size: 24pt;
+}
+h2:first-letter {
+    color: red;
+    font-size: 119pt;
+}
+
+h2 {
+    color: blue;
+    font-size: 24pt;
+}

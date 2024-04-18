@@ -73,16 +73,124 @@ na niektórych stronach Twojego serwisu (może to być np. główny tytuł stron
 znak, że dobrze byłoby umieścić w zewnętrznym arkuszu stylów deklarację jego
 klasy. Dzięki temu, jeśli później zdecydujemy się zmienić jego formatowanie, nie
 będziemy musieli modyfikować każdej ze stron, a jedynie zewnętrzny arkusz.
-<li> Już na początkowym etapie projektowania serwisu, dobrze jest dokładnie obmyślić,
-jakie klasy mogą okazać się użyteczne. Im więcej deklaracji klas - odnoszących się do
-powtarzalnych elementów - umieścisz w zewnętrznym arkuszu stylów, tym szybciej
-przebiegnie późniejsza ewentualna modyfikacja stron!
-<li> Dobrym pomysłem jest również wstawianie komentarza przed każdą deklaracją klasy
-w arkuszu (znaki: /* ... */), w którym opisuje się jej przeznaczenie. Po jakimś czasie w
-Twoim arkuszu stylów może znaleźć się tyle klas, że zapomnisz, do jakich elementów
-się one odnosiły. Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej
-komentarz
+
+</ul>
 <h1><li>Kiedy i z jakiego powodu powinny być planowane klasy dla wykonywanej strony?</h1>
+    <ul>
+        <li> Już na początkowym etapie projektowania serwisu, dobrze jest dokładnie obmyślić,
+            jakie klasy mogą okazać się użyteczne. Im więcej deklaracji klas - odnoszących się do
+            powtarzalnych elementów - umieścisz w zewnętrznym arkuszu stylów, tym szybciej
+            przebiegnie późniejsza ewentualna modyfikacja stron!
+    </ul>
+<h1><li>Jaki jest cel stosowania komentarzy podczas definiowania klas?</h1>
+        <ul>
+            <li> Dobrym pomysłem jest również wstawianie komentarza przed każdą deklaracją klasy
+            w arkuszu (znaki: /* ... */), w którym opisuje się jej przeznaczenie. Po jakimś czasie w
+            Twoim arkuszu stylów może znaleźć się tyle klas, że zapomnisz, do jakich elementów
+            się one odnosiły. Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej
+            komentarz
+    </ul>
+    <h1><li>Podaj konkretny przykład definiowania klasy oraz jej użycia(wywołanie).</li></h1>
+
+    <b>Przykład definiowania i wywołania klasy:</b><br>
+definicja arkusza styli<br>
+<span style="border: 2px solid black;">
+p.przyklad_klasa { color: red }
+</span><br>
+wywołanie<br>
+<span style="border: 2px solid black;">
+< p class="przyklad_klasa">To jest akapit.< /p>
+</span>
+<h1><li>Omów klasa donosząca się tylko do jednego selektora wraz z przykładem</li></h1>
+<p><br>
+<b>1)Klasa donosząca się tylko do jednego selektora</b><br>
+Podobnie jak w przypadku identyfikatora, tak zdefiniowana klasa może zostać użyta tylko w 
+tym selektorze, do którego została przypisana, np.:
+definicja arkusza styli<br>
+<div style="border: 2px solid black;">
+p.moja<br>
+{<br>
+color:green;<br>
+font-size:14pt;<br>
+}<br>
+</div>
+wywołanie<br>
+Powinna zostać wywołana w znaczniku < p>< /p> w następujący sposób:
+<div style="border: 2px solid black;">
+< p class=”moja”>Treść akapitu< /p></p>
+</div>
+
+<h1><li> Jaki jest cel stosowania klasy uniwersalnej. Jakie jest znaczenie znaku „*” oraz kiedy 
+    można nie stosować tego znaku. Podaj przykład (definicja, wywołanie)</li></h1>
+    
+
+
+    <b>2)Klasa uniwersalna</b>
+W przypadku stosowanie klas, często podczas ich definiowania, nie wiemy jeszcze, w 
+stosunku do jakich znaczników będziemy chcieli je później użyć. Wtedy przydatny okazuje 
+się selektor uniwersalny, który pozwala przypisać własności klasy do wszystkich elementów, 
+którym zostanie ona nadana, bez względu na typ znacznika czyli użycie jest możliwe w 
+różnych znacznikach.<br><br>
+Przykład:<br>
+definicja arkusza styli<br><br>
+<div style="border: 2px solid black;">
+*.przyklad_uniwersalna { color: red }
+</div><br>
+Każdy element, któremu nadamy klasę przyklad_uniwersalna, będzie miał kolor czerwony.
+W tym przypadku gwiazdkę (*) w regule stylu można pominąć:
+<div style="border: 2px solid black;">
+.przyklad_uniwersalna { font-size:12 pt; color: red }
+</div>
+Zwróć uwagę na fakt występowania kropki po selektorze lub przed nazwą klasy. Jest to 
+element obowiązkowy i bez tego dalsza praca nie miałaby większego sensu.<br><br>
+Jak widać na powyższym przykładzie, klasa jest wywoływana w dokumencie za pomocą 
+atrybutu class, który może zostać umieszczony niemal w dowolnym znaczniku kodu HTML.
+Przykład
+definicja arkusza styli
+<div style="border: 2px solid black;">
+.moja
+{
+color:red;
+font-size:12pt;
+font-style:italic;
+}
+</div>
+wywołanie
+Wywołanie klasy tak określonej klasy również odbywa się za pomocą atrybutu class.
+<div style="border: 2px solid black;">
+< p class=”moja”>Przykład akapitu z określoną klasą</ p><br>
+< ol class=”moja”><br>
+< h1 class=”moja”>Przykład nagłówka z określoną klasą</ h1><br>
+</div>
+Przykład
+Listing arkusza CSS
+<div style="border: 2px solid black;">
+p<br>
+{<br>
+font-size:14pt;<br>
+color:green;<br>
+}<br>
+.moja<br>
+{<br>
+font-style:italic;<br>
+font-size:20pt;<br>
+color:red;<br>
+}<br>
+</div>
+Listing fragmentu kodu XHTML/HTML
+<div style="border: 2px solid black;">
+< p>Blok tekstu o kolorze zielonym i czcionce 14pt< /p><br>
+< p class="moja">Blok tekstu, w którym użyłem klasy o nazwie .moja< /p><br>
+< p>Blok tekstu o kolorze zielonym i czcionce 14pt< /p><br>
+</div>
+<br>
+<div style="border: 2px solid black;">
+< ol class="moja"><br>
+ < li>lista, w której użyłem klasy o nazwie .moja< /li><br>
+ < li>lista, w której użyłem klasy o nazwie .moja< /li><br>
+< / ol><br>
+</div>
+
 </BODY>
 </html>
 <!-- Michał Mionskowski-->

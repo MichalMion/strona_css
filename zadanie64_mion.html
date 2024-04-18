@@ -1,0 +1,61 @@
+<html>
+<head>
+</head>
+<body>
+<ol>
+<h1><li>zaokrąglanie narożników</h1>
+<table border="1">
+  <tr>
+    <td colspan="2"><h1>Zaokrąglenie narożników obszarów bloków np. DIV</h1></td>
+  </tr>
+  <tr>
+    <td><p>Zaokrąglenie górnego-lewego narożnika:</p></td>
+    <td><p>selektor { border-top-left-radius: zaokrąglenie }</p></td>
+  </tr>
+  <tr>
+    <td><p>Zaokrąglenie górnego-prawego narożnika:</p></td>
+    <td><p>selektor { border-top-right-radius: zaokrąglenie }</p></td>
+  </tr>
+    <tr>
+    <td><p>Zaokrąglenie dolnego-prawego narożnika:</p></td>
+    <td><p>selektor { border-bottom-right-radius: zaokrąglenie }</p></td>
+  </tr>
+    <tr>
+    <td><p>Zaokrąglenie dolnego-lewego narożnika:</p></td>
+    <td><p>Zaokrąglenie dolnego-lewego narożnika:</p></td>
+  </tr>
+</table>
+
+<h1><li>Zastosowanie oraz uwagi dotyczące zaokrąglania narożników</h1>
+<p><u>Zastosowanie:</u><br>
+We wszystkich przypadkach selektorem może być dowolny znacznik, np. 
+<ul>
+<li>p – akapit
+<li>h1 –nagłówek
+<li>div –blok
+</ul>
+Natomiast "zaokrąglenie" określa promień wyrażony w jednostkach długości albo w 
+procentach (względem obszaru obramowania - zobacz: Model pudełkowy). Możliwe jest tutaj 
+podanie:
+<ul>
+<li>jednej wartości - zaokrąglenie symetryczne
+<li>dwóch wartości - pierwsza określa poziomy promień ćwiartki elipsy zaokrąglenia, a 
+druga - pionowy
+</ul>
+Zaokrąglone narożniki to bardzo ciekawy efekt wizualny, który może zwiększyć estetykę 
+strony. Co ciekawe, element wcale nie musi mieć obramowania, aby miał zaokrąglone 
+narożniki. Wystarczy jeśli będzie miał ustalone jakieś tło, aby efekt był widoczny na ekranie.<br> 
+Ale uwaga: tekst wewnątrz elementu nie zostanie zawinięty do zaokrąglonych rogów. Jeśli 
+promień zaokrąglenia będzie zbyt duży, tekst wyjdzie na zewnątrz</p>
+<h1><li>Przykład zaokrąglania</h1>
+<div style="border: 2px solid black;"><p>border-top-right-radius: 10px</p></div>
+<h1><li>Jak wycentrować blok div</h1>
+<p>W definicja CSS bloku DIV należy wpisać:
+<div style="border: 2px solid black;">margin-left: auto;<br>
+margin-right: auto;<div></p>
+
+
+
+
+</body>
+</html>

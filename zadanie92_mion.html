@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <style type="text/css"> /* początek def CSS */
+ * { margin: 0px; padding: 0px;} /* zerowanie styli */
+ div {overflow: hidden; padding: 25px; }
+/* overflow: hidden --> ukrywanie tekstu wychodzącego poza granice elementu */
+/* padding: 25px; --> - otaczające marginesy wewnętrzne*/
+ #ramka { /* definicja elementu ID o nazwie ramka*/
+ margin-right: auto; /* auto --> automatycznie dopasowuje margines */
+ margin-left: auto;
+ min-width: 400px; /* minimalna szer strony--> ustala minimalną szerokość stron*/
+ max_width: 900px; /* maksymalna szer strony-->ustala maxymalną szerokość strony */
+ }
+ #naglowek {
+ background-color: greenyellow; 
+/* kolor tła w HEX na #FCF; */
+ font-size:16pt; 
+/* wielkość czcionki na 16 na jaka tu jest jednostka- pt - punkty */
+ color:red; 
+/* zmiana koloru tekstu na czerwony */
+ font-family: Arial; 
+/* zmiana czcionki tekstu na arial */
+ font-style: italic;
+/* Zmiana stylu czcionki na Italic */
+ text-align: center; 
+/* Weycentrowanie tekstu */
+ font-weight:bold;
+/* waga czcionki w tym przypadku pogrobienie czcionki */
+ }
+ #stopka {
+ background-color: limegreen;
+ font-size:16pt; 
+ color:blue; 
+ font-family: Arial; 
+ font-style: italic;
+ clear:both; 
+/* clear-przyleganie elementów, both- obie krawędzie elementu */
+ }
+.kolumny {/*definicja elementu class (jest kropka i co to znaczy)*/
+ margin-top: 10px; /* Margines nałożony od góry */
+ margin-rigth: 2%; /* Margines nałożony od prawej */
+ margin-bottom: 2%; /* margines nałożony od dołu */
+ margin-left: 10px; /* margines nałożony od lewej */
+ background-color: #c0c0c0;
+ }
+ #kol1 {
+ float: left; /* Elementy znajdują się obok siebie */
+ width:100px;
+ background-color: seagreen;
+ }
+ #kol2 {
+background-color: palegreen; 
+font-size:  0.7cm;
+color: darkgreen;
+}
+/* Zakańcza znacacznik definiowania stylu <--*/</style>
+ </head>
+<body>
+ <div id="ramka">
+ <div id="naglowek">Nagłówek mojej strony </div>
+ <div class="kolumny" id="kol1"><p>Menu</p> </div>
+ <div class="kolumny" id="kol2"><p>Treść:<br>
+    Szablon pływający (płynny szablon)
+    Przy zmianie szerokości okna przeglądarki zmieniać się będzie szerokość kolumn.
+    Najczęściej zmiana szerokości dotyczy tylko wybranych kolumn np. kolumna menu
+    pozostaje niezmieniona, pozostałe kolumny zmieniaja się płynnie w stosunku do 
+    szerokości okna.</p>
+<table>
+    <tr>
+        <img src="Mionskowski_100procent_skalowana.jpg">
+    </tr>
+    <tr><img src="Mionskowski_50procent_skalowana.jpg"></tr>
+</table></div>
+ <div id="stopka">Pracę wykonał nieznany woluntariusz</div>
+ </div>
+</body>
+</html>
